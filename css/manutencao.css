@@ -1,0 +1,215 @@
+/* Estilo do corpo em geral do site */
+
+body {
+    font-weight: bold;
+}
+.bg {
+    color: #ffc107;
+    font-size: large;
+}
+
+
+/* Estilo para ocupar toda a tela */
+.containerBody {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.containerBody main {
+    flex: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bgMain {
+    border: 2px solid rgb(26, 25, 25);
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    color: #ffc107;
+}
+
+/* estilização da navbar */
+.bgNavbar {
+    background-color: rgb(26, 25, 25);
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navConteudo {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.paiOptionNav {
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+.pesquisar {
+    width: 500px;
+    height: 35px;
+}
+
+.navText {
+    flex-direction: row;
+    display: flex;
+}
+
+.optionNavbar {
+    color: #ffc107;
+}
+
+.navElementos {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}
+
+/* estilo para telas mobile */
+.mobileNavElement {
+    display: none;
+}
+
+.menuIcon {
+    display: none;
+}
+
+/* Customização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.linkStyle {
+    color: blue;
+    text-decoration: underline;
+}
+
+.customForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+input, textarea, label {
+    resize: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.titleForm {
+    padding-top:20px;
+}
+
+.clienteCustom {
+    width: 100px;
+}
+
+.btnCustom {
+    width: 20vh;
+}
+
+.modeloCustom {
+    width: 500px;
+}
+
+.anofabCustom {
+    width: 100px;
+}
+
+.corCustom {
+    width: 150px;
+}
+
+.valorCustom {
+    width: 160px;
+}
+
+.formElementPai {
+    display: flex;
+    flex-direction: row;
+}
+.formElementFilho1, .formElementFilho2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.formElementFilho2 {
+    margin-left: 20px;
+}
+
+/* modificações para telas menores */
+@media screen and (max-width: 730px) {
+    .navElementos {
+        display: none;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .mobileNavElement {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .paiOptionNav {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .conteudo {
+        padding-bottom: 10px;
+    }
+
+    .pesquisar {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+
+    /* mobile style forms */
+
+    .modeloCustom {
+        width: 100px;
+    }
+
+    .anofabCustom {
+        width: 80px;
+    }
+
+    .clienteCustom {
+        width: 80px;
+    }
+
+    .corCustom {
+        width: 100px;
+    }
+
+    .valorCustom {
+        width: 110px;
+    }
+}

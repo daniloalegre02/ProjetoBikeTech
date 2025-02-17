@@ -1,0 +1,47 @@
+/* Estilo para ocupar toda a tela */
+.containerBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.containerBody main {
+    flex: 1;
+}
+
+.bgMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+/* estilo para o form e body */
+
+body {
+    background-image: url('../img/siteFundo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.btn {
+    width: 100px;
+}
+
+.myform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 1em;
+    box-shadow: 3px 3px 8px rgb(26, 25, 25);
+
+}
