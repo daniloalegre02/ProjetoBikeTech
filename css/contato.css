@@ -1,0 +1,42 @@
+
+/* Estilo para ocupar toda a tela*/
+.containerBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.containerBody main {
+    flex: 1;
+}
+
+.bgMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* estilo das informações de contato */
+body {
+    background-image: url('../img/siteFundo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+img {
+    width: 300px;
+}
+
+.infoContats {
+    background-color: rgba(7, 7, 7, 0.476);
+    color: #fff;
+    border-radius: 1em;
+    box-shadow: 3px 3px 8px #fff;
+}

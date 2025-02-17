@@ -1,0 +1,270 @@
+/* Estilo do corpo em geral do site */
+.bg {
+    color: #ffc107;
+    margin-bottom: 80px;
+}
+
+body {
+    background-image: url('../img/fundoIndex.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titleSection {
+    margin-bottom: 50px;
+}
+
+/* ESTILO DENTRO DO SECTION */
+
+.imgUserCont {
+    width: 90%;
+}
+.classePai {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonGroupUser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 105%;
+}
+
+.btn{
+width: 160px;
+
+}
+
+.btn:hover {
+  transform: scale(1.10);
+  transition: 0.5s;
+  box-shadow: 3px 3px 3px black;
+}
+
+
+.imgUserCont {
+    display: flex;
+    justify-content: center;
+  
+}
+
+/* estilo conteúdo principal */
+.princContPai {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bold;
+
+
+}
+.userCont {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffc107;
+}
+/* Estilização da navbar */
+.bgNavbar {
+    background-color: rgb(26, 25, 25);
+    border: 1px solid rgb(26, 25, 25);
+    font-weight: bold;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navConteudo {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.navImage:hover{
+  transform: scale(1.10);
+  transition: 0s;
+}
+
+.optionNavbar:hover{
+  transform: scale(1.10);
+  transition: 0s;
+  color: white;
+}
+
+.paiOptionNav:hover{
+  transform: scale(1.02);
+  transition: 0s;
+}
+
+.menuIcon:hover{
+  transform: scale(1.02);
+  transition: 1s;
+}
+
+.pesquisar {
+    width: 500px;
+    height: 50px;
+}
+
+.navText {
+    flex-direction: row;
+    display: flex;
+}
+
+.optionNavbar {
+    color: #ffc107;
+    font-size: larger;
+}
+
+.navElementos {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}
+
+
+
+/* navbar mobile */
+.mobileNavElement {
+    display: none;
+}
+
+.menuIcon {
+    display: none;
+}
+
+/* estilização dos cards */
+
+.paiCards {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.CardsContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10%;
+}
+
+.paiCards:hover{
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/* Carousel */
+.imgCarousel {
+    height: 80vh;
+}
+
+/* Footer */
+.icons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bgContainers {
+    background-color: rgb(26, 25, 25);
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 50px;
+
+}
+
+
+
+
+
+
+.userCont:hover{
+  animation: titulo 4s ease-out infinite;
+}
+
+@keyframes titulo {
+  0% {
+    transform: translateY(0px);
+      box-shadow: 3px 3px 3px currentColor;
+
+  }
+  25% {
+      transform: translateY(-5px);
+        box-shadow: 3px 3px 3px currentColor;
+
+  }
+  50% {
+    transform: translateY(10px);
+      box-shadow: 3px 3px 3px currentColor;
+
+  }
+  100% {
+      transform: translateY(0px);
+        box-shadow: 3px 3px 3px currentColor;
+
+          }
+}
+
+
+
+/* Estilo para telas mobile */
+@media screen and (max-width: 730px) {
+    .navElementos {
+        display: none;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .buttonUser {
+        margin-bottom: 20px;
+    }
+
+    .buttonGroupUser {
+        flex-direction: column;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .mobileNavElement {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .paiOptionNav {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-size: large;
+    }
+
+    .conteudo {
+        padding-bottom: 10px;
+    }
+
+    .pesquisar {
+        width: 150px;
+    }
+
+    /* Carousel */
+    .imgCarousel {
+        height: 50vh;
+    }
+
+
+}

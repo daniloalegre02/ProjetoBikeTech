@@ -1,0 +1,23 @@
+/* Estilo para ocupar toda a tela */
+.containerBody {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.containerBody main {
+    flex: 1;
+}
+
+
+/* Estilo de conteúdo da página no geral */
+.bg {
+    margin: 10px;
+    color: #ffc107;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
